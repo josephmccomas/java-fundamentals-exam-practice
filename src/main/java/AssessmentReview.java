@@ -43,14 +43,16 @@ public static double median(int[] arr){
             return arr.length/2;
         }
 }
-//    public static ArrayList<Cat> uppercaseCatColor(ArrayList<Cat> cats) {
-//        ArrayList<Cat> catOutput = new ArrayList<>();
-//
-//        for (Cat cat : cats) {
-//            cat.setColor(cat.getColor().toUpperCase());
-//            catOutput.add(cat);
-//        }
-//
-//        return catOutput;
-//    }
+
+
+    public static ArrayList<Cat> uppercaseCatColor(ArrayList<Cat> cats) {
+        ArrayList<Cat> catOutput = new ArrayList<>();
+
+        for (Cat cat : cats) {
+            cat.setColor(cat.getColor().toUpperCase());
+            catOutput.add(cat);
+        }
+
+        return catOutput;
+    }
 }

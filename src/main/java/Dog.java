@@ -1,4 +1,4 @@
-public class Dog extends Pet {
+public class Dog extends Pet implements Barkable{
 
     private String breed;
 
@@ -13,5 +13,10 @@ public class Dog extends Pet {
 
     public void setBreed(String breed) {
         this.breed = breed;
+    }
+
+    @Override
+    public void bark() {
+        System.out.println("Bork bork!");
     }
 }
