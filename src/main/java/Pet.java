@@ -1,42 +1,42 @@
-public abstract class Pet {
+public class Pet {
 
-    public int age;
-    public boolean isRescue;
+    public Integer age;
+
+    public Boolean isRescue;
+
     public String name;
 
-
-
-    public Pet(int age, boolean isRescue, String name) throws IllegalArgumentException {
-        if (name == null){
-            throw new IllegalArgumentException();
-        }
+    public Pet(Integer age, Boolean isRescue, String name) {
         this.age = age;
         this.isRescue = isRescue;
         this.name = name;
+
+        if (name == null) {
+            throw new IllegalArgumentException("Name can not be null");
+        }
     }
 
-    public int getAge() {
+    public Integer getAge() {
         return age;
     }
 
-    public void setAge(int age) {
+    public void setAge(Integer age) {
         this.age = age;
     }
 
-    public boolean isRescue() {
+    public Boolean getRescue() {
         return isRescue;
     }
 
-    public void setRescue(boolean rescue) {
+    public void setRescue(Boolean rescue) {
         isRescue = rescue;
     }
 
-    public String getName(String name) {
-        return this.name;
+    public String getName() {
+        return name;
     }
 
     public void setName(String name) {
         this.name = name;
     }
-
 }

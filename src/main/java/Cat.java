@@ -1,7 +1,8 @@
 public class Cat extends Pet implements Meowable{
+
     private String color;
 
-    public Cat(int age, boolean isRescue, String name) throws IllegalArgumentException {
+    public Cat(Integer age, Boolean isRescue, String name, String color) {
         super(age, isRescue, name);
         this.color = color;
     }
@@ -12,9 +13,5 @@ public class Cat extends Pet implements Meowable{
 
     public void setColor(String color) {
         this.color = color;
-    }
-    @Override
-    public void meow() {
-        System.out.println("This is a meow!");
     }
 }

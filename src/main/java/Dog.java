@@ -1,6 +1,8 @@
-public class Dog extends Pet implements Barkable{
-private String breed;
-    public Dog(int age, boolean isRescue, String name) throws IllegalArgumentException {
+public class Dog extends Pet {
+
+    private String breed;
+
+    public Dog(Integer age, Boolean isRescue, String name, String breed) {
         super(age, isRescue, name);
         this.breed = breed;
     }
@@ -11,10 +13,5 @@ private String breed;
 
     public void setBreed(String breed) {
         this.breed = breed;
-    }
-
-    @Override
-    public void bark() {
-        System.out.println("Bork bork!");
     }
 }

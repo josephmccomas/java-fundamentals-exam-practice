@@ -1,3 +1,5 @@
-public interface Meowable {
-    void meow();
+public class Meowable {
+
+    public void abstract meow(){
+    }
 }

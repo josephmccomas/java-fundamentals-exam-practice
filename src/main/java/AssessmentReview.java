@@ -22,20 +22,27 @@ public class AssessmentReview {
 //            return a[n / 2];
 //        return (double)(a[(n - 1) / 2] + a[n / 2]) / 2.0;
 //    }
-    public static double median(int[] array) {
-        double answer = 0;
-        Arrays.sort(array);
-        if (array.length % 2 == 0) {
-            int rightIndex = array.length/2;
-            int leftIndex = rightIndex -1;
-            int sum = array[rightIndex] + array[leftIndex];
-            answer = (double) sum / 2;
+//    public static double median(int[] array) {
+//        double answer = 0;
+//        Arrays.sort(array);
+//        if (array.length % 2 == 0) {
+//            int rightIndex = array.length/2;
+//            int leftIndex = rightIndex -1;
+//            int sum = array[rightIndex] + array[leftIndex];
+//            answer = (double) sum / 2;
+//        } else {
+//            return array[array.length / 2];
+//        }
+//        return answer;
+//    }
+public static double median(int[] arr){
+        Arrays.sort(arr);
+        if (arr.length % 2 == 0){
+            return (arr[arr.length/2] + (arr[arr.length/2 -1])) / 2.0;
         } else {
-            return array[array.length / 2];
+            return arr.length/2;
         }
-        return answer;
-    }
-
+}
 //    public static ArrayList<Cat> uppercaseCatColor(ArrayList<Cat> cats) {
 //        ArrayList<Cat> catOutput = new ArrayList<>();
 //
